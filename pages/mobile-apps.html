@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xprowess Mobile App Development - iOS, Android, Cross-platform apps with Flutter & React Native. Beautiful, performant mobile experiences.">
+    <title>Mobile App Development | iOS & Android Apps | Xprowess</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <div class="animated-bg"><div class="grid-overlay"></div><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-text">Xprowess</span></a>
+            <nav class="nav-desktop">
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link active">Services</a>
+                    <div class="dropdown">
+                        <a href="bi-solutions.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21H4.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C3 20.24 3 19.96 3 19.4V3"/><path d="m7 14 4-4 4 4 6-6"/></svg>BI Solutions</a>
+                        <a href="web-development.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>Web Development</a>
+                        <a href="mobile-apps.html" class="dropdown-item active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Mobile Apps</a>
+                        <a href="software.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>Software Development</a>
+                        <a href="ai-ml.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>AI & ML Solutions</a>
+                        <a href="cloud-services.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>Cloud Services</a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-header">Get Started<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="nav-overlay"></div>
+    <nav class="nav-mobile">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="bi-solutions.html" class="nav-link">BI Solutions</a>
+        <a href="web-development.html" class="nav-link">Web Development</a>
+        <a href="mobile-apps.html" class="nav-link active">Mobile Apps</a>
+        <a href="software.html" class="nav-link">Software Development</a>
+        <a href="ai-ml.html" class="nav-link">AI & ML Solutions</a>
+        <a href="cloud-services.html" class="nav-link">Cloud Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="page-hero" style="padding: 180px 0 100px; position: relative; overflow: hidden;">
+            <canvas id="particle-canvas" class="particle-canvas"></canvas>
+            <div class="container">
+                <nav class="breadcrumb animate-on-scroll" style="margin-bottom: 32px;">
+                    <a href="../index.html">Home</a><span class="separator">/</span><a href="#">Services</a><span class="separator">/</span><span class="current">Mobile Apps</span>
+                </nav>
+                <div class="grid-2" style="gap: 60px; align-items: center;">
+                    <div class="animate-on-scroll">
+                        <div class="hero-badge animate-pulse-glow" style="margin-bottom: 24px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>iOS & Android</div>
+                        <h1 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; margin-bottom: 24px;">Mobile App<br><span class="gradient-text">Development</span></h1>
+                        <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 32px; max-width: 540px;">Native and cross-platform mobile applications that users love. Beautiful designs, smooth performance, and seamless experiences on iOS and Android.</p>
+                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-primary btn-lg">Start Your App<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                            <a href="portfolio.html" class="btn btn-secondary btn-lg">View Apps</a>
+                        </div>
+                    </div>
+                    <div class="animate-on-scroll delay-200">
+                        <div style="position: relative; display: flex; justify-content: center; gap: 20px;">
+                            <!-- Phone Mockup 1 -->
+                            <div class="holographic-card animate-float" style="width: 180px; padding: 12px; border-radius: 32px; border: 1px solid var(--border-default);">
+                                <div style="background: var(--bg-elevated); border-radius: 24px; overflow: hidden; aspect-ratio: 9/19;">
+                                    <div style="height: 24px; background: var(--bg-surface); display: flex; justify-content: center; align-items: center;"><div style="width: 60px; height: 6px; background: var(--bg-base); border-radius: 3px;"></div></div>
+                                    <div style="padding: 16px;">
+                                        <div style="width: 100%; height: 80px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(123, 47, 247, 0.2)); border-radius: 12px; margin-bottom: 12px;"></div>
+                                        <div style="height: 8px; background: var(--text-primary); border-radius: 4px; margin-bottom: 8px; opacity: 0.8; width: 80%;"></div>
+                                        <div style="height: 6px; background: var(--text-tertiary); border-radius: 3px; margin-bottom: 16px; opacity: 0.4;"></div>
+                                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                            <div style="height: 50px; background: var(--bg-glass); border-radius: 8px; border: 1px solid var(--border-subtle);"></div>
+                                            <div style="height: 50px; background: var(--bg-glass); border-radius: 8px; border: 1px solid var(--border-subtle);"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Phone Mockup 2 -->
+                            <div class="holographic-card animate-float" style="width: 180px; padding: 12px; border-radius: 32px; border: 1px solid var(--border-default); animation-delay: -2s; margin-top: 40px;">
+                                <div style="background: var(--bg-elevated); border-radius: 24px; overflow: hidden; aspect-ratio: 9/19;">
+                                    <div style="height: 24px; background: var(--bg-surface); display: flex; justify-content: center; align-items: center;"><div style="width: 60px; height: 6px; background: var(--bg-base); border-radius: 3px;"></div></div>
+                                    <div style="padding: 16px;">
+                                        <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                            <div style="width: 40px; height: 40px; background: var(--gradient-secondary); border-radius: 50%;"></div>
+                                            <div><div style="height: 6px; background: var(--text-primary); border-radius: 3px; width: 60px; margin-bottom: 6px; opacity: 0.8;"></div><div style="height: 4px; background: var(--text-tertiary); border-radius: 2px; width: 40px; opacity: 0.4;"></div></div>
+                                        </div>
+                                        <div style="height: 60px; background: linear-gradient(135deg, rgba(123, 47, 247, 0.2), rgba(255, 46, 147, 0.2)); border-radius: 12px; margin-bottom: 12px;"></div>
+                                        <div style="height: 60px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 245, 212, 0.2)); border-radius: 12px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-card animate-float" style="position: absolute; top: 20px; right: -10px; padding: 10px 14px;"><div style="font-size: 18px; font-weight: 700; color: var(--cyber-mint);">4.9★</div><div style="font-size: 10px; color: var(--text-tertiary);">App Store</div></div>
+                            <div class="floating-card animate-float" style="position: absolute; bottom: 40px; left: -10px; padding: 10px 14px; animation-delay: -3s;"><div style="font-size: 18px; font-weight: 700; color: var(--electric-purple);">1M+</div><div style="font-size: 10px; color: var(--text-tertiary);">Downloads</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="badge">What We Build</span>
+                    <h2 class="section-title">Mobile Solutions for <span class="gradient-text">Every Platform</span></h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; margin-top: 50px;">
+                    <div class="card glow-card animate-on-scroll" style="padding: 36px;">
+                        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(0, 212, 255, 0.2)); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1.5"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2z"/><path d="M12 6v6l4 2"/></svg></div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px;">iOS Development</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Native iOS apps built with Swift and SwiftUI following Apple's Human Interface Guidelines for optimal user experience.</p>
+                        <ul style="list-style: none; padding: 0; margin: 0;"><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Swift / SwiftUI</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>App Store Optimization</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Apple Watch & iPad</li></ul>
+                    </div>
+                    <div class="card glow-card animate-on-scroll" style="padding: 36px;">
+                        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(123, 47, 247, 0.2), rgba(255, 46, 147, 0.2)); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="1.5"><path d="M5 16V8a7 7 0 0 1 14 0v8"/><path d="M4 13h16v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-5z"/></svg></div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px;">Android Development</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Native Android apps with Kotlin and Jetpack Compose following Material Design principles.</p>
+                        <ul style="list-style: none; padding: 0; margin: 0;"><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Kotlin / Jetpack Compose</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Play Store Optimization</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Tablet & Wearables</li></ul>
+                    </div>
+                    <div class="card glow-card animate-on-scroll" style="padding: 36px;">
+                        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(0, 245, 212, 0.2)); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M10 4v16"/></svg></div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px;">Cross-Platform (Flutter)</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Single codebase for iOS and Android with Flutter, delivering native performance and beautiful UIs.</p>
+                        <ul style="list-style: none; padding: 0; margin: 0;"><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Flutter / Dart</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>60fps Performance</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Hot Reload Dev</li></ul>
+                    </div>
+                    <div class="card glow-card animate-on-scroll" style="padding: 36px;">
+                        <div style="width: 56px; height: 56px; background: linear-gradient(135deg, rgba(255, 107, 53, 0.2), rgba(255, 46, 147, 0.2)); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--tech-orange)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                        <h3 style="font-size: 22px; margin-bottom: 10px;">React Native</h3>
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px;">Leverage your React expertise to build mobile apps with shared logic between web and mobile.</p>
+                        <ul style="list-style: none; padding: 0; margin: 0;"><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--tech-orange)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>React Native / Expo</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--tech-orange)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Code Sharing</li><li style="display: flex; align-items: center; gap: 8px; padding: 6px 0; color: var(--text-secondary); font-size: 13px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--tech-orange)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Native Modules</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="section" style="background: linear-gradient(180deg, transparent, rgba(123, 47, 247, 0.03), transparent);">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="badge badge-purple">Features</span>
+                    <h2 class="section-title">What Makes Our Apps <span class="gradient-text-secondary">Stand Out</span></h2>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; margin-top: 50px;">
+                    <div class="animate-on-scroll" style="text-align: center; padding: 32px;">
+                        <div style="width: 64px; height: 64px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                        <h4 style="font-size: 18px; margin-bottom: 8px;">Blazing Fast</h4>
+                        <p style="font-size: 14px; color: var(--text-tertiary);">60fps smooth animations and instant load times</p>
+                    </div>
+                    <div class="animate-on-scroll" style="text-align: center; padding: 32px;">
+                        <div style="width: 64px; height: 64px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <h4 style="font-size: 18px; margin-bottom: 8px;">Secure</h4>
+                        <p style="font-size: 14px; color: var(--text-tertiary);">End-to-end encryption and secure authentication</p>
+                    </div>
+                    <div class="animate-on-scroll" style="text-align: center; padding: 32px;">
+                        <div style="width: 64px; height: 64px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+                        <h4 style="font-size: 18px; margin-bottom: 8px;">Offline First</h4>
+                        <p style="font-size: 14px; color: var(--text-tertiary);">Works seamlessly without internet connection</p>
+                    </div>
+                    <div class="animate-on-scroll" style="text-align: center; padding: 32px;">
+                        <div style="width: 64px; height: 64px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--plasma-pink)" stroke-width="1.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+                        <h4 style="font-size: 18px; margin-bottom: 8px;">Push Notifications</h4>
+                        <p style="font-size: 14px; color: var(--text-tertiary);">Engage users with timely, relevant notifications</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid stagger-children">
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="100" data-suffix="+">0</div><div class="stat-label">Apps Launched</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="5" data-suffix="M+">0</div><div class="stat-label">Total Downloads</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="4.8" data-suffix="★" data-decimals="1">0</div><div class="stat-label">Average Rating</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="99" data-suffix="%">0</div><div class="stat-label">Crash-Free</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <span class="badge" style="margin-bottom: 16px;">Launch Your App</span>
+                    <h2 class="cta-title">Ready to Build Your<br><span class="gradient-text">Mobile App?</span></h2>
+                    <p class="cta-description">Let's create an app users will love.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get Free Quote<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="portfolio.html" class="btn btn-secondary btn-lg">View Apps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo"><span class="logo-text">Xprowess</span></a><p class="footer-description">Transforming businesses through innovative technology solutions.</p></div>
+                <div class="footer-links"><h4>Services</h4><ul><li><a href="bi-solutions.html">BI Solutions</a></li><li><a href="web-development.html">Web Development</a></li><li><a href="mobile-apps.html">Mobile Apps</a></li><li><a href="ai-ml.html">AI & ML</a></li><li><a href="cloud-services.html">Cloud Services</a></li></ul></div>
+                <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Contact</h4><ul><li style="color: var(--text-tertiary);">info@xprowess.com</li><li style="color: var(--text-tertiary);">Mumbai, India</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Xprowess. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>
