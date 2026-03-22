@@ -1,1 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xprowess - Transform your business with cutting-edge BI Solutions, Web Development, Mobile Apps, AI/ML, and Cloud Services. Your partner in digital excellence.">
+    <meta name="keywords" content="BI Solutions, Business Intelligence, Web Development, Mobile Apps, AI, Machine Learning, Cloud Services, Data Warehousing">
+    <meta name="author" content="Xprowess">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Xprowess - Digital Excellence & Innovation">
+    <meta property="og:description" content="Transform your business with cutting-edge technology solutions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://xprowess.com">
+    
+    <title>Xprowess | Digital Excellence & Innovation</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">
+                <span class="gradient-text">Xprowess</span>
+            </div>
+            <div class="bar-loader"></div>
+        </div>
+        <style>
+            .preloader {
+                position: fixed;
+                inset: 0;
+                background: var(--bg-primary);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 99999;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+            }
+            .preloader.loaded {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .preloader-content {
+                text-align: center;
+            }
+            .preloader-logo {
+                font-family: var(--font-display);
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 2rem;
+            }
+            .preloader .bar-loader {
+                width: 200px;
+                margin: 0 auto;
+            }
+        </style>
+    </div>
 
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="grid-overlay"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Xprowess</span>
+            </a>
+            
+            <nav class="nav-desktop">
+                <div class="nav-item has-dropdown">
+                    <a href="#services" class="nav-link">Services</a>
+                    <div class="dropdown">
+                        <a href="pages/bi-solutions.html" class="dropdown-item">BI Solutions</a>
+                        <a href="pages/web-development.html" class="dropdown-item">Web Development</a>
+                        <a href="pages/mobile-apps.html" class="dropdown-item">Mobile Apps</a>
+                        <a href="pages/software.html" class="dropdown-item">Software Development</a>
+                        <a href="pages/ai-ml.html" class="dropdown-item">AI & ML Solutions</a>
+                        <a href="pages/cloud-services.html" class="dropdown-item">Cloud Services</a>
+                    </div>
+                </div>
+                <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <a href="pages/contact.html" class="btn btn-primary btn-header">
+                Let's Talk
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav-mobile">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/bi-solutions.html" class="nav-link">BI Solutions</a>
+        <a href="pages/web-development.html" class="nav-link">Web Development</a>
+        <a href="pages/mobile-apps.html" class="nav-link">Mobile Apps</a>
+        <a href="pages/software.html" class="nav-link">Software Development</a>
+        <a href="pages/ai-ml.html" class="nav-link">AI & ML Solutions</a>
+        <a href="pages/cloud-services.html" class="nav-link">Cloud Services</a>
+        <a href="pages/portfolio.html" class="nav-link">Portfolio</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <!-- Particle Canvas -->
+            <canvas id="particle-canvas" class="particle-canvas"></canvas>
+            
+            <!-- Video Background -->
+            <div class="hero-video-bg">
+                <div class="hero-video-overlay"></div>
+            </div>
+
+            <!-- Floating Elements -->
+            <div class="hero-visual">
+                <div class="floating-card animate-float" style="top: 20%; left: 8%;">
+                    <div class="floating-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <div class="floating-card-label">Projects</div>
+                    <div class="floating-card-value">200+</div>
+                </div>
+                
+                <div class="floating-card animate-float" style="top: 60%; left: 5%; animation-delay: -2s;">
+                    <div class="floating-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="floating-card-label">Clients</div>
+                    <div class="floating-card-value">50+</div>
+                </div>
+                
+                <div class="floating-card animate-float" style="top: 25%; right: 8%; animation-delay: -4s;">
+                    <div class="floating-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="floating-card-label">Uptime</div>
+                    <div class="floating-card-value">99.9%</div>
+                </div>
+                
+                <div class="floating-card animate-float" style="top: 65%; right: 6%; animation-delay: -6s;">
+                    <div class="floating-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <div class="floating-card-label">Satisfaction</div>
+                    <div class="floating-card-value">100%</div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-on-scroll">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                        Transforming Businesses with Technology
+                    </div>
+                    
+                    <h1 class="hero-title animate-on-scroll delay-100">
+                        <span class="line">Digital Excellence</span>
+                        <span class="line gradient-text">&amp; Innovation</span>
+                    </h1>
+                    
+                    <p class="hero-description animate-on-scroll delay-200">
+                        We architect intelligent solutions that transform data into decisions, 
+                        ideas into applications, and visions into digital reality. Your trusted 
+                        partner for end-to-end technology transformation.
+                    </p>
+                    
+                    <div class="hero-cta animate-on-scroll delay-300">
+                        <a href="pages/contact.html" class="btn btn-primary btn-lg">
+                            Start Your Project
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="pages/portfolio.html" class="btn btn-secondary btn-lg">
+                            View Our Work
+                        </a>
+                    </div>
+
+                    <div class="hero-stats animate-on-scroll delay-400">
+                        <div class="hero-stat">
+                            <div class="hero-stat-value" data-counter="8" data-suffix="+">0</div>
+                            <div class="hero-stat-label">Years Experience</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value" data-counter="200" data-suffix="+">0</div>
+                            <div class="hero-stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value" data-counter="50" data-suffix="+">0</div>
+                            <div class="hero-stat-label">Happy Clients</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="hero-stat-value" data-counter="15" data-suffix="+">0</div>
+                            <div class="hero-stat-label">Tech Experts</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); text-align: center;">
+                <div style="font-size: 12px; color: var(--text-tertiary); margin-bottom: 8px; letter-spacing: 2px; text-transform: uppercase;">Scroll</div>
+                <div style="width: 24px; height: 40px; border: 2px solid var(--border-default); border-radius: 12px; margin: 0 auto; position: relative;">
+                    <div style="width: 4px; height: 8px; background: var(--cyber-mint); border-radius: 2px; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); animation: float 2s ease-in-out infinite;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section section-lg" id="services">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="badge">Our Services</span>
+                    <h2 class="section-title">
+                        Solutions That Drive<br>
+                        <span class="gradient-text">Business Growth</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        From data intelligence to digital experiences, we deliver end-to-end 
+                        technology solutions tailored to your unique business needs.
+                    </p>
+                </div>
+
+                <div class="grid-3 stagger-children" style="margin-top: var(--space-12);">
+                    <!-- BI Solutions - Primary -->
+                    <div class="service-card service-card-primary animate-on-scroll" style="grid-column: span 2;">
+                        <div class="service-card-content">
+                            <div class="service-card-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 21H4.6c-.6 0-1.1-.5-1.1-1.1V3"/>
+                                    <path d="M7 14l4-4 4 4 6-6"/>
+                                    <circle cx="17" cy="8" r="2"/>
+                                    <circle cx="11" cy="14" r="2"/>
+                                    <circle cx="7" cy="14" r="2"/>
+                                </svg>
+                            </div>
+                            <span class="badge" style="margin-bottom: var(--space-4);">Most Popular</span>
+                            <h3 class="service-card-title">End-to-End BI Solutions</h3>
+                            <p class="service-card-description">
+                                Transform raw data into actionable insights with our comprehensive Business Intelligence solutions. 
+                                From data warehousing to interactive dashboards, we build the complete analytics ecosystem your 
+                                business needs to make data-driven decisions.
+                            </p>
+                            <ul style="list-style: none; padding: 0; margin: var(--space-6) 0; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                                <li style="display: flex; align-items: center; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                                    Data Warehousing
+                                </li>
+                                <li style="display: flex; align-items: center; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                                    Power BI / Tableau
+                                </li>
+                                <li style="display: flex; align-items: center; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                                    ETL Pipelines
+                                </li>
+                                <li style="display: flex; align-items: center; gap: var(--space-2); color: var(--text-secondary); font-size: var(--text-sm);">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+                                    Real-time Analytics
+                                </li>
+                            </ul>
+                            <a href="pages/bi-solutions.html" class="service-card-link">
+                                Explore BI Solutions
+                                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                        <div class="service-card-visual hide-tablet">
+                            <div style="width: 100%; height: 300px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.1), rgba(123, 47, 247, 0.1)); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                                <div style="display: flex; align-items: flex-end; gap: 12px; height: 200px;">
+                                    <div style="width: 30px; background: linear-gradient(180deg, var(--cyber-mint), var(--neon-blue)); border-radius: 4px 4px 0 0; animation: float 3s ease-in-out infinite; height: 60%;"></div>
+                                    <div style="width: 30px; background: linear-gradient(180deg, var(--electric-purple), var(--plasma-pink)); border-radius: 4px 4px 0 0; animation: float 3s ease-in-out infinite; animation-delay: -0.5s; height: 80%;"></div>
+                                    <div style="width: 30px; background: linear-gradient(180deg, var(--cyber-mint), var(--neon-blue)); border-radius: 4px 4px 0 0; animation: float 3s ease-in-out infinite; animation-delay: -1s; height: 45%;"></div>
+                                    <div style="width: 30px; background: linear-gradient(180deg, var(--electric-purple), var(--plasma-pink)); border-radius: 4px 4px 0 0; animation: float 3s ease-in-out infinite; animation-delay: -1.5s; height: 90%;"></div>
+                                    <div style="width: 30px; background: linear-gradient(180deg, var(--cyber-mint), var(--neon-blue)); border-radius: 4px 4px 0 0; animation: float 3s ease-in-out infinite; animation-delay: -2s; height: 70%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Development -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8"/>
+                                <path d="M12 17v4"/>
+                                <path d="M7 8l3 3-3 3"/>
+                                <path d="M13 14h4"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Web Development</h3>
+                        <p class="service-card-description">
+                            From stunning static sites to complex web applications and eCommerce platforms, 
+                            we build digital experiences that captivate and convert.
+                        </p>
+                        <a href="pages/web-development.html" class="service-card-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Apps -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="5" y="2" width="14" height="20" rx="2"/>
+                                <path d="M12 18h.01"/>
+                                <path d="M9 6h6"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Mobile Apps</h3>
+                        <p class="service-card-description">
+                            Native iOS and Android apps or cross-platform solutions with React Native 
+                            and Flutter—we build apps users love.
+                        </p>
+                        <a href="pages/mobile-apps.html" class="service-card-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Software Development -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                                <line x1="12" y1="2" x2="12" y2="22"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Software Development</h3>
+                        <p class="service-card-description">
+                            Custom software solutions engineered for your unique business processes—
+                            scalable, secure, and built to last.
+                        </p>
+                        <a href="pages/software.html" class="service-card-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- AI & ML -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2a4 4 0 0 1 4 4c0 1.1-.9 2-2 2h-4c-1.1 0-2-.9-2-2a4 4 0 0 1 4-4z"/>
+                                <path d="M12 8v6"/>
+                                <path d="M8 14a4 4 0 0 0 8 0"/>
+                                <circle cx="12" cy="20" r="2"/>
+                                <path d="M12 18v-4"/>
+                                <path d="M4.93 4.93l2.83 2.83"/>
+                                <path d="M16.24 7.76l2.83-2.83"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">AI & ML Solutions</h3>
+                        <p class="service-card-description">
+                            Harness the power of artificial intelligence and machine learning to 
+                            automate, predict, and innovate.
+                        </p>
+                        <a href="pages/ai-ml.html" class="service-card-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Cloud Services -->
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                                <path d="M13 14l-2 2 2 2"/>
+                                <path d="M11 16h5"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-card-title">Cloud Services</h3>
+                        <p class="service-card-description">
+                            Azure, AWS, or Snowflake—we architect and migrate your infrastructure 
+                            to the cloud with zero downtime.
+                        </p>
+                        <a href="pages/cloud-services.html" class="service-card-link">
+                            Learn More
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack Section -->
+        <section class="section" style="background: linear-gradient(180deg, transparent, rgba(123, 47, 247, 0.03), transparent);">
+            <div class="container">
+                <div class="section-header text-center animate-on-scroll">
+                    <span class="badge badge-purple">Technology Stack</span>
+                    <h2 class="section-title">
+                        Powered by<br>
+                        <span class="gradient-text-secondary">Modern Technologies</span>
+                    </h2>
+                </div>
+
+                <div class="animate-on-scroll" style="margin-top: var(--space-12);">
+                    <div style="margin-bottom: var(--space-10);">
+                        <h4 style="text-align: center; color: var(--text-tertiary); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--space-6);">Data & Analytics</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#29B5E8"><circle cx="12" cy="12" r="10"/></svg><span>Snowflake</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#F2C811"><rect x="4" y="4" width="16" height="16" rx="2"/></svg><span>Power BI</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#E97627"><polygon points="12,2 22,22 2,22"/></svg><span>Tableau</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#0078D4"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg><span>Azure</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#FF9900"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/></svg><span>AWS</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#CC2927"><rect x="4" y="4" width="16" height="16" rx="2"/></svg><span>SQL Server</span></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 style="text-align: center; color: var(--text-tertiary); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--space-6);">Development</h4>
+                        <div class="tech-grid">
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#61DAFB"><circle cx="12" cy="12" r="3"/></svg><span>React</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#339933"><polygon points="12,2 22,20 2,20"/></svg><span>Node.js</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#3776AB"><circle cx="12" cy="12" r="10"/></svg><span>Python</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#3178C6"><rect x="4" y="4" width="16" height="16" rx="2"/></svg><span>TypeScript</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#02569B"><polygon points="12,2 22,12 12,22 2,12"/></svg><span>Flutter</span></div>
+                            <div class="tech-item"><svg viewBox="0 0 24 24" width="40" height="40" fill="#512BD4"><path d="M12 2L2 7v10l10 5 10-5V7L12 2z"/></svg><span>.NET</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid stagger-children">
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-value" data-counter="200" data-suffix="+">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                        <div class="stat-sublabel">Across all industries</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-value" data-counter="50" data-suffix="+">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                        <div class="stat-sublabel">Worldwide</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-value" data-counter="99" data-suffix=".9%">0</div>
+                        <div class="stat-label">Uptime Guaranteed</div>
+                        <div class="stat-sublabel">Enterprise reliability</div>
+                    </div>
+                    <div class="stat-item animate-on-scroll">
+                        <div class="stat-value" data-counter="24" data-suffix="/7">0</div>
+                        <div class="stat-label">Support Available</div>
+                        <div class="stat-sublabel">Always here for you</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: var(--space-16); align-items: center;">
+                    <div class="animate-on-scroll">
+                        <span class="badge">Why Choose Us</span>
+                        <h2 class="section-title" style="margin-top: var(--space-4);">
+                            Your Success is<br>
+                            <span class="gradient-text">Our Priority</span>
+                        </h2>
+                        <p style="color: var(--text-secondary); line-height: var(--leading-relaxed); margin: var(--space-6) 0;">
+                            We don't just deliver projects—we build partnerships. Our team combines deep technical 
+                            expertise with a genuine commitment to your business goals.
+                        </p>
+                        
+                        <div style="margin-top: var(--space-8);">
+                            <div style="display: flex; align-items: flex-start; gap: var(--space-4); margin-bottom: var(--space-6);">
+                                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(123, 47, 247, 0.2)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-1);">Proven Expertise</h4>
+                                    <p style="color: var(--text-tertiary); font-size: var(--text-sm);">8+ years delivering enterprise-grade solutions</p>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: flex-start; gap: var(--space-4); margin-bottom: var(--space-6);">
+                                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(123, 47, 247, 0.2)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-1);">On-Time Delivery</h4>
+                                    <p style="color: var(--text-tertiary); font-size: var(--text-sm);">98% of projects delivered on schedule</p>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: flex-start; gap: var(--space-4);">
+                                <div style="width: 48px; height: 48px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(123, 47, 247, 0.2)); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                </div>
+                                <div>
+                                    <h4 style="font-size: var(--text-lg); margin-bottom: var(--space-1);">Secure & Scalable</h4>
+                                    <p style="color: var(--text-tertiary); font-size: var(--text-sm);">Enterprise-grade security and architecture</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-on-scroll delay-200">
+                        <div style="background: var(--bg-glass); border: 1px solid var(--border-default); border-radius: var(--radius-2xl); padding: var(--space-10); position: relative; overflow: hidden;">
+                            <div style="text-align: center; margin-bottom: var(--space-8);">
+                                <div style="font-family: var(--font-display); font-size: var(--text-6xl); font-weight: 700; background: var(--gradient-primary); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: var(--space-2);">100%</div>
+                                <div style="color: var(--text-secondary);">Client Satisfaction Rate</div>
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                                <div style="text-align: center; padding: var(--space-4); background: rgba(255, 255, 255, 0.02); border-radius: var(--radius-lg);">
+                                    <div style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--cyber-mint);">15+</div>
+                                    <div style="font-size: var(--text-xs); color: var(--text-tertiary);">Tech Experts</div>
+                                </div>
+                                <div style="text-align: center; padding: var(--space-4); background: rgba(255, 255, 255, 0.02); border-radius: var(--radius-lg);">
+                                    <div style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--electric-purple);">6+</div>
+                                    <div style="font-size: var(--text-xs); color: var(--text-tertiary);">Service Lines</div>
+                                </div>
+                                <div style="text-align: center; padding: var(--space-4); background: rgba(255, 255, 255, 0.02); border-radius: var(--radius-lg);">
+                                    <div style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--neon-blue);">5+</div>
+                                    <div style="font-size: var(--text-xs); color: var(--text-tertiary);">Countries Served</div>
+                                </div>
+                                <div style="text-align: center; padding: var(--space-4); background: rgba(255, 255, 255, 0.02); border-radius: var(--radius-lg);">
+                                    <div style="font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--tech-orange);">10+</div>
+                                    <div style="font-size: var(--text-xs); color: var(--text-tertiary);">Industries</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <span class="badge">Let's Build Together</span>
+                    <h2 class="cta-title">
+                        Ready to Transform<br>
+                        <span class="gradient-text">Your Business?</span>
+                    </h2>
+                    <p class="cta-description">
+                        Let's discuss how we can help you leverage technology to achieve your goals. 
+                        Schedule a free consultation with our experts today.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="pages/contact.html" class="btn btn-primary btn-lg">
+                            Get Free Consultation
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="pages/portfolio.html" class="btn btn-ghost btn-lg">View Case Studies</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><span class="logo-text">Xprowess</span></a>
+                    <p class="footer-description">
+                        Transforming businesses through innovative technology solutions. 
+                        Your trusted partner in digital excellence and innovation.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" class="social-link" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="pages/bi-solutions.html">BI Solutions</a></li>
+                        <li><a href="pages/web-development.html">Web Development</a></li>
+                        <li><a href="pages/mobile-apps.html">Mobile Apps</a></li>
+                        <li><a href="pages/software.html">Software Development</a></li>
+                        <li><a href="pages/ai-ml.html">AI & ML Solutions</a></li>
+                        <li><a href="pages/cloud-services.html">Cloud Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:hello@xprowess.com">hello@xprowess.com</a></li>
+                        <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Xprowess. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
