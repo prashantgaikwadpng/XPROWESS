@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xprowess Portfolio - Explore our successful projects in BI, Web Development, Mobile Apps, AI/ML, and Cloud Solutions.">
+    <title>Portfolio | Our Work | Xprowess</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <div class="animated-bg"><div class="grid-overlay"></div><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-text">Xprowess</span></a>
+            <nav class="nav-desktop">
+                <div class="nav-item has-dropdown">
+                    <a href="#" class="nav-link">Services</a>
+                    <div class="dropdown">
+                        <a href="bi-solutions.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21H4.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C3 20.24 3 19.96 3 19.4V3"/><path d="m7 14 4-4 4 4 6-6"/></svg>BI Solutions</a>
+                        <a href="web-development.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>Web Development</a>
+                        <a href="mobile-apps.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>Mobile Apps</a>
+                        <a href="software.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>Software Development</a>
+                        <a href="ai-ml.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>AI & ML Solutions</a>
+                        <a href="cloud-services.html" class="dropdown-item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>Cloud Services</a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary btn-header">Get Started<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="nav-overlay"></div>
+    <nav class="nav-mobile">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="bi-solutions.html" class="nav-link">BI Solutions</a>
+        <a href="web-development.html" class="nav-link">Web Development</a>
+        <a href="mobile-apps.html" class="nav-link">Mobile Apps</a>
+        <a href="software.html" class="nav-link">Software Development</a>
+        <a href="ai-ml.html" class="nav-link">AI & ML Solutions</a>
+        <a href="cloud-services.html" class="nav-link">Cloud Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="page-hero" style="padding: 180px 0 80px; position: relative; overflow: hidden;">
+            <canvas id="particle-canvas" class="particle-canvas"></canvas>
+            <div class="container">
+                <nav class="breadcrumb animate-on-scroll" style="margin-bottom: 32px;">
+                    <a href="../index.html">Home</a><span class="separator">/</span><span class="current">Portfolio</span>
+                </nav>
+                <div class="text-center animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+                    <div class="hero-badge animate-pulse-glow" style="margin-bottom: 24px; display: inline-flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>Our Work</div>
+                    <h1 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.1; margin-bottom: 24px;">Featured <span class="gradient-text">Projects</span></h1>
+                    <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.7;">Explore our portfolio of successful projects across BI, Web, Mobile, AI/ML, and Cloud solutions. Real results for real businesses.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Grid -->
+        <section class="section" style="padding-top: 40px;">
+            <div class="container">
+                <!-- Filter Tabs -->
+                <div class="animate-on-scroll" style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 48px;">
+                    <button style="padding: 10px 24px; background: var(--gradient-primary); border: none; border-radius: 100px; color: white; font-size: 14px; font-weight: 500; cursor: pointer;">All</button>
+                    <button style="padding: 10px 24px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 100px; color: var(--text-secondary); font-size: 14px; font-weight: 500; cursor: pointer;">BI Solutions</button>
+                    <button style="padding: 10px 24px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 100px; color: var(--text-secondary); font-size: 14px; font-weight: 500; cursor: pointer;">Web</button>
+                    <button style="padding: 10px 24px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 100px; color: var(--text-secondary); font-size: 14px; font-weight: 500; cursor: pointer;">Mobile</button>
+                    <button style="padding: 10px 24px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 100px; color: var(--text-secondary); font-size: 14px; font-weight: 500; cursor: pointer;">AI/ML</button>
+                    <button style="padding: 10px 24px; background: var(--bg-glass); border: 1px solid var(--border-subtle); border-radius: 100px; color: var(--text-secondary); font-size: 14px; font-weight: 500; cursor: pointer;">Cloud</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 32px;">
+                    
+                    <!-- Project 1 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(0, 245, 212, 0.15), rgba(123, 47, 247, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--cyber-mint)" stroke-width="1" opacity="0.6"><path d="M21 21H4.6c-.56 0-.84 0-1.054-.109a1 1 0 0 1-.437-.437C3 20.24 3 19.96 3 19.4V3"/><path d="m7 14 4-4 4 4 6-6"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge">BI Solutions</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">Insurance Analytics Platform</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">Comprehensive data warehouse on Azure with real-time policy analytics, claims dashboards, and automated daily earned premium calculations.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Azure</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Power BI</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">SQL Server</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">60%</div><div style="font-size: 11px; color: var(--text-tertiary);">Faster Reports</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">10M+</div><div style="font-size: 11px; color: var(--text-tertiary);">Daily Records</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(123, 47, 247, 0.15), rgba(255, 46, 147, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--electric-purple)" stroke-width="1" opacity="0.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge badge-purple">Web Development</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">E-Commerce Platform</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">High-performance e-commerce platform with real-time inventory, secure payments, and AI-powered product recommendations.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Next.js</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Node.js</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Stripe</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">35%</div><div style="font-size: 11px; color: var(--text-tertiary);">Revenue Up</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">2.5x</div><div style="font-size: 11px; color: var(--text-tertiary);">Conversion</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 245, 212, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--neon-blue)" stroke-width="1" opacity="0.6"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge" style="background: rgba(0, 212, 255, 0.2); border-color: var(--neon-blue);">Mobile App</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">Healthcare Mobile App</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">Patient engagement app with appointment booking, telemedicine, health tracking, and secure medical records access.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Flutter</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Firebase</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">HIPAA</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">4.9★</div><div style="font-size: 11px; color: var(--text-tertiary);">App Rating</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">500K+</div><div style="font-size: 11px; color: var(--text-tertiary);">Downloads</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(255, 46, 147, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--tech-orange)" stroke-width="1" opacity="0.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge" style="background: rgba(255, 107, 53, 0.2); border-color: var(--tech-orange);">AI/ML</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">Fraud Detection System</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">Real-time ML-powered fraud detection for financial transactions with 98% accuracy and millisecond response times.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Python</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">TensorFlow</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Kafka</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">98%</div><div style="font-size: 11px; color: var(--text-tertiary);">Accuracy</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">$2M+</div><div style="font-size: 11px; color: var(--text-tertiary);">Saved</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(57, 255, 20, 0.15), rgba(0, 245, 212, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--hologram-green)" stroke-width="1" opacity="0.6"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge" style="background: rgba(57, 255, 20, 0.2); border-color: var(--hologram-green);">Cloud</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">Cloud Migration - Retail</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">Complete migration of legacy retail systems to Azure with Kubernetes, reducing costs by 45% and improving scalability.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Azure</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Kubernetes</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">Terraform</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">45%</div><div style="font-size: 11px; color: var(--text-tertiary);">Cost Down</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">99.99%</div><div style="font-size: 11px; color: var(--text-tertiary);">Uptime</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="card animate-on-scroll" style="overflow: hidden; transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <div style="height: 220px; background: linear-gradient(135deg, rgba(255, 46, 147, 0.15), rgba(123, 47, 247, 0.15)); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="var(--plasma-pink)" stroke-width="1" opacity="0.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <div style="position: absolute; top: 16px; left: 16px;"><span class="badge" style="background: rgba(255, 46, 147, 0.2); border-color: var(--plasma-pink);">AI/ML</span></div>
+                        </div>
+                        <div style="padding: 28px;">
+                            <h3 style="font-size: 22px; margin-bottom: 10px;">AI Customer Support Bot</h3>
+                            <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.7; margin-bottom: 20px;">Generative AI-powered chatbot handling 80% of customer queries automatically with human-like conversations.</p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;"><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">GPT-4</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">LangChain</span><span style="padding: 4px 12px; background: var(--bg-glass); border-radius: 100px; font-size: 12px; color: var(--text-tertiary);">RAG</span></div>
+                            <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);"><div><div style="font-size: 20px; font-weight: 700; color: var(--cyber-mint);">80%</div><div style="font-size: 11px; color: var(--text-tertiary);">Auto-Resolved</div></div><div><div style="font-size: 20px; font-weight: 700; color: var(--electric-purple);">60%</div><div style="font-size: 11px; color: var(--text-tertiary);">Cost Saved</div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid stagger-children">
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="500" data-suffix="+">0</div><div class="stat-label">Projects Delivered</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="200" data-suffix="+">0</div><div class="stat-label">Happy Clients</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="98" data-suffix="%">0</div><div class="stat-label">Client Satisfaction</div></div>
+                    <div class="stat-item animate-on-scroll"><div class="stat-value" data-counter="10" data-suffix="+">0</div><div class="stat-label">Years Experience</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <span class="badge" style="margin-bottom: 16px;">Start Your Project</span>
+                    <h2 class="cta-title">Ready to Join Our<br><span class="gradient-text">Success Stories?</span></h2>
+                    <p class="cta-description">Let's build something amazing together.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Start Your Project<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        <a href="about.html" class="btn btn-secondary btn-lg">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"><a href="../index.html" class="logo"><span class="logo-text">Xprowess</span></a><p class="footer-description">Transforming businesses through innovative technology solutions.</p></div>
+                <div class="footer-links"><h4>Services</h4><ul><li><a href="bi-solutions.html">BI Solutions</a></li><li><a href="web-development.html">Web Development</a></li><li><a href="mobile-apps.html">Mobile Apps</a></li><li><a href="ai-ml.html">AI & ML</a></li><li><a href="cloud-services.html">Cloud Services</a></li></ul></div>
+                <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div class="footer-links"><h4>Contact</h4><ul><li style="color: var(--text-tertiary);">info@xprowess.com</li><li style="color: var(--text-tertiary);">Mumbai, India</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 Xprowess. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none"><path d="M18 15l-6-6-6 6"/></svg></button>
+    <script src="../js/main.js"></script>
+</body>
+</html>
